@@ -138,7 +138,7 @@ class GenericScript(ControlSurface):
                 if has_specification_for('TOGGLELOCK', bank_controls):
                     layer_specs['lock_button'] = make_bank_button('TOGGLELOCK', 'Device_Lock_Button')
                 bank_buttons_raw = []
-                for index in xrange(8):
+                for index in xrange(9):
                     key = 'BANK' + str(index + 1)
                     if key in bank_controls.keys():
                         control_info = bank_controls[key]
